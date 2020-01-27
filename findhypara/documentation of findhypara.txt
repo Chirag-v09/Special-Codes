@@ -1,0 +1,38 @@
+init
+define the variables that carry the data of all types of trained model
+
+FindModel (parameters)
+X = X_train
+y = y_train
+val_X = validation_X
+val_y = validation_y
+input_shape = provide the input shape of the data
+activations_first = provide the activation function of the first hidden layer
+activations = provide the activation function for the hidden layers
+activation_output = provide the activation function for the output layer
+optimizer = which optiomizer u want to use
+loss_function = whic loss function
+metric = Enter the metric you want to use here in each epoch (list)
+essentially provide this metrix ["accuracy"] else you can include of your choice
+epochs_num = no. of epochs
+
+layers = no. of layers (list)
+neurons = no. of neurons in layers (list)
+batch_size = different batch size (list)
+
+
+SaveModelHistory()
+will save the model data i.e 
+the loss at each epoch
+validation loss at each epoch
+accuracy at each epoch
+validation accuracy at each epoch
+
+SaveFullHistory()
+will save the all the metrix value at each epoch
+i.e loss, val loss, acc, val acc and the remaing metric you used in the metirc parameter
+
+
+LossPlot() and AccPlot()
+will plot the graph for the model having the best hyperparameter
+
